@@ -10,7 +10,7 @@
  */
 int _putchar(char c)
 {
-	return (write(1, &c, 1));
+    	return (write(1, &c, 1));
 }
 
 /**
@@ -23,30 +23,38 @@ int _putchar(char c)
 
 int main(void)
 {
-	int i = 0;
-	int len = 0;
-	char *str = "Hello World";
-	char arr_str[] = "Holberton";
+    	int i = 0;
+   	int len = 0;
+    	char *str = "Placeholder";
+    	char arr_str[] = "Another Placeholder";
 
-	while (str[i] != '\0')
-	{
+    	while (str[i] != '\0')
+    	{
 		_putchar(str[i]);
 		i++;
-	}
-	_putchar('\n');
+    	}
+    	_putchar('\n');
 
-	i = 0;
+    	while (*str != '\0')
+    	{
+       		_putchar(*str);
+		str++;
+    	}
+    	_putchar('\n');
 
-	while (arr_str[len] != '\0')
-	{
+
+    	i = 0;
+
+    	while (arr_str[len] != '\0')
+    	{
 		len++;
-	}
+    	}
 
-	while (i < len)
-	{
+    	while (i < len)
+   	{
 		_putchar(arr_str[i]);
 		i++;
-	}
-	_putchar('\n');
+    	}
+    	_putchar('\n');
 
 }
